@@ -20,10 +20,10 @@ body{
     grid-area: logo;
     margin:  .25em .25em;
     text-decoration: none;
-    font-weight: bolder; 
+    font-weight: bold; 
     font-family: fantasy;
     font-size: 20pt;
-    animation: color-change 30s infinite;
+    /* animation: color-change 30s infinite; */
 }
 
 @keyframes color-change {
@@ -35,11 +35,12 @@ body{
 
 .primary-nav{
     grid-area: primary-nav;
+    margin-top: 5em;
     margin:  .25em .25em;
     list-style-type: none;
     font-size: 20pt;
+    font-family: fantasy;
 }
-
 
 li{
     display: inline;
@@ -101,10 +102,27 @@ h2:hover{
     background-color: gray;
 }
 
+h3{
+    /* margin-left: 26.5em; */
+    font-size: 18pt;
+    color: ivory;
+    background-color: rgb(43, 43, 51);
+    border-radius: 5em;
+    padding: .5em;
+    text-align: center;
+    z-index: 9;
+    /* display: inline-flex;  */
+    /* position: absolute; */
+}
+
 .About{
     visibility: hidden;
     padding: 0pt;
     margin: 0pt;
     text-align: center;
     background-color: cornflowerblue;
+}
+
+.overlay{
+    z-index: 9;
 }
