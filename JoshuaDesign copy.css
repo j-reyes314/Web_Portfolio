@@ -7,19 +7,17 @@ body{
 }
 
 .navbar{
+    display: grid;
+    grid-template-columns: auto auto auto;
     background-color: rgb(54, 51, 51);
     opacity: 0.6;
     height: 50px;
-    position: relative;
-}
-
-.navbar .container{
-    width: auto;
-    
-
+    grid-template-areas: 
+    "logo . primary-nav";
 }
 
 .logo{
+    grid-area: logo;
     margin:  .25em .25em;
     text-decoration: none;
     font-weight: bolder; 
@@ -36,10 +34,10 @@ body{
 }
 
 .primary-nav{
-    display: inline;
+    grid-area: primary-nav;
+    margin:  .25em .25em;
     list-style-type: none;
     font-size: 20pt;
-    position: absolute;
 }
 
 
@@ -91,12 +89,16 @@ h2{
     margin-left: 26.5em;
     font-size: 18pt;
     color: ivory;
-    background-color: rgb(64, 64, 238);
+    background-color: rgb(40, 40, 107);
     border-radius: 5em;
     padding: .5em;
     /* display: inline-flex;  */
     position: absolute;
+}
 
+h2:hover{
+    color: royalblue;
+    background-color: gray;
 }
 
 .About{
