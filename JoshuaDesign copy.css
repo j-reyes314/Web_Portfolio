@@ -1,8 +1,8 @@
 body{
     margin: 0;
     padding: 0;
-    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
-    background: linear-gradient(120deg, #302f2f 40%, #1c1b22 60%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: linear-gradient(120deg, #302f2f 50%, #1c1b22 50%);
     background-attachment:fixed;
     background-repeat: no-repeat;
 }
@@ -27,7 +27,7 @@ body{
     font-weight: bold; 
     font-family: fantasy;
     font-size: 20pt;
-    /* animation: color-change 30s infinite; */
+    animation: color-change 30s infinite;
 }
 
 @keyframes color-change {
@@ -57,13 +57,13 @@ a{
     display: inline-block;
     color: lightseagreen;
 } 
+
 a:hover{
     color: white;
 }
 
 .hero-image{
-    position: relative;
-    
+    position: relative; 
 }
 
 .hero-image p{
@@ -74,14 +74,22 @@ a:hover{
     color: lightseagreen;
 }
 
-/* .hero-image button{
-    display: block;
-    text-align: center;
+.fadeButton{
+    border-radius: 2em;
     border: none;
+    background-color: rgb(10, 101, 238);
+    text-align: center;
+    display: block;
     margin: auto;
-    background-color: lightseagreen;
-    
-} */
+    padding: none;
+    font-size: 16pt;
+    color: rgb(46, 46, 44);
+
+}
+.fadeButton:hover{
+    color: black;
+    background-color: gray;
+}
 
 h1{
     text-align: center;
@@ -125,10 +133,9 @@ h3{
 
 .About{
     opacity: 0;
-    padding: 0pt;
-    margin: 0pt;
-    text-align: center;
-    background-color: cornflowerblue;
+    padding: none;
+    margin: none;
+    position: absolute;
 }
 
 .fade{
@@ -138,6 +145,7 @@ h3{
 
 .contact-section p{
     font-size: 20pt;
+    margin-top: 3em;
 }
 
 
@@ -172,6 +180,8 @@ input[type="submit"]{
 }
 
 iframe{
+    margin: 0px;
+    padding-top: 5em;
     text-align: center;
     display: block;
     width: 80%;
@@ -186,7 +196,7 @@ h4{
 }
 
 .elementToFadeIn{
-    animation: fadeIn 1s linear forwards;
+    animation: fadeIn .25s linear forwards;
 }
 
 @keyframes fadeIn {
@@ -195,7 +205,7 @@ h4{
 }
 
 .elementToFadeOut {
-    animation: fadeOut 1s linear forwards;
+    animation: fadeOut .25s linear forwards;
 }
 
 @keyframes fadeOut {
