@@ -72,6 +72,16 @@ a:hover{
     /* position: absolute; */
 }
 
+h1{
+    text-align: center;
+    font-size: 100pt;
+    color: ivory;
+    padding: 0pt;
+    margin-bottom: 0em;
+    /* margin-top: 0em; */
+    /* margin: 0pt; */
+}
+
 .hero-image p{
     margin: 0px;
     padding: 1em;
@@ -80,21 +90,6 @@ a:hover{
     color: lightseagreen;
 }
 
-img{
-    margin: auto;
-    display: block;
-    padding: 1em;
-    width: 40%;
-    height: 40%;
-}
-
-.About{
-    opacity: 0;
-    padding: none;
-    margin: none;
-    /* position: absolute; */
-    z-index: 9;
-}
 
 .fadeButton{
     border-radius: 2em;
@@ -113,51 +108,45 @@ img{
     background-color: gray;
 }
 
-h1{
-    text-align: center;
-    font-size: 100pt;
-    color: ivory;
-    padding: 0pt;
-    margin-bottom: 0em;
-    /* margin-top: 0em; */
-    /* margin: 0pt; */
+.elementToFadeIn{
+    animation: fadeIn .25s linear forwards;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.elementToFadeOut {
+    animation: fadeOut .25s linear forwards;
+}
+
+@keyframes fadeOut {
+ 0% { opacity:1; } 
+ 100% { opacity:0; } 
+}
+
+
+.About{
+    opacity: 0;
+    padding: none;
+    margin: none;
+    /* position: absolute; */
+    z-index: 9;
+}
+
+img{
+    margin: auto;
+    display: block;
+    padding: 1em;
+    width: 40%;
+    height: 40%;
 }
 
 h2{
-    /* margin-left: 26.5em; */
-    font-size: 18pt;
-    color: ivory;
-    background-color: rgb(40, 40, 107);
-    border-radius: 5em;
-    padding: .5em;
-    /* text-align: center; */
-    display: inline-flex; 
-    position: absolute;
-}
-
-h2:hover{
-    color: royalblue;
-    background-color: gray;
-}
-
-h3{
-    /* margin-left: 26.5em; */
-    font-size: 18pt;
-    color: ivory;
-    background-color: rgb(43, 43, 51);
-    border-radius: 5em;
-    padding: .5em;
-    text-align: center;
-    /* z-index: 9; */
-    /* display: inline-flex;  */
-    /* position: absolute; */
-}
-
-.contact-section p{
     font-size: 20pt;
     margin-top: 3em;
 }
-
 
 label{
     display: block;
@@ -201,25 +190,11 @@ iframe{
 }
 h4{
     text-align: center;
+    margin: auto;
+    margin-top: 1em;
+    padding: 1em;
+    width: 10%;
     border-radius: 1em;
-    border-color: aquamarine;
-}
-
-.elementToFadeIn{
-    animation: fadeIn .25s linear forwards;
-}
-
-@keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
-
-.elementToFadeOut {
-    animation: fadeOut .25s linear forwards;
-}
-
-@keyframes fadeOut {
- 0% { opacity:1; } 
- 100% { opacity:0; } 
+    background-color: rgb(11, 103, 179);
 }
 
