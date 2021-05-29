@@ -31,17 +31,33 @@
                 <h2>Contact Me</h2>
 
 
-                <form action="https://formspree.io/f/mgerkyll" method="POST" enctype="text/plain">
+                <!-- <form action="https://formspree.io/f/mgerkyll" method="POST" enctype="text/plain">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" placeholder="Your Name">
 
-                    <label for="mail">Email</label>
-                    <input type="text" id="Email" name="mail" placeholder="Your E-mail">
+                    <label for="email">Email</label>
+                    <input type="text" id="Email" name="email" placeholder="Your E-mail">
                     
                     <label for="message">Message</label>
                     <textarea name="message" id="message" cols="30" rows="10" placeholder="Say Hello!"></textarea>
                     
-                    <input type="submit" class="send-message-cta" value="send-message">
+                    <input type="submit"  value="send-message">
+                </form> -->
+
+                <form action="https://formspree.io/f/mgerkyll" method="POST">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" placeholder="Your Name">
+
+                    <label for="_replyto">Your E-mail</label>
+                    <input type="email" name="_replyto" placeholder="Your E-mail">
+
+                    <label for="_subject">Subject</label>
+                    <input type="text" name=_subject placeholder="Subject">
+
+                    <label for="message">Message</label>
+                    <textarea name="message" placeholder= "Say Hello!"></textarea>
+
+                    <input type="submit" value="Send">
                 </form>
             </div>
         </div>
