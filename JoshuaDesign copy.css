@@ -74,14 +74,14 @@ a:hover{
     color: lightseagreen;
 }
 
-.hero-image button{
+/* .hero-image button{
     display: block;
     text-align: center;
     border: none;
     margin: auto;
     background-color: lightseagreen;
     
-}
+} */
 
 h1{
     text-align: center;
@@ -124,12 +124,17 @@ h3{
 }
 
 .About{
-    visibility: hidden;
+    opacity: 0;
     padding: 0pt;
     margin: 0pt;
     text-align: center;
     background-color: cornflowerblue;
 }
+
+.fade{
+    opacity: 1;
+}
+
 
 .contact-section p{
     font-size: 20pt;
@@ -179,3 +184,22 @@ h4{
     border-radius: 1em;
     border-color: aquamarine;
 }
+
+.elementToFadeIn{
+    animation: fadeIn 1s linear forwards;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.elementToFadeOut {
+    animation: fadeOut 1s linear forwards;
+}
+
+@keyframes fadeOut {
+ 0% { opacity:1; } 
+ 100% { opacity:0; } 
+}
+
