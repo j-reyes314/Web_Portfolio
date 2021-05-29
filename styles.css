@@ -41,6 +41,7 @@ body{
 
 li{
     float: right;
+    padding-left: .25em;
 } 
 
 a{
@@ -124,8 +125,7 @@ Button:hover{
     position: relative;
 }
 
-img{
-
+.portrait{
     margin: auto;
     display: block;
     padding: 1em;
@@ -181,8 +181,10 @@ iframe{
     height: 67em;
     border: none;
     margin: auto;
+    margin-bottom: 1em;
 }
 
 .download-btn{
+    margin-bottom: 1em;
     color: white;
 }
