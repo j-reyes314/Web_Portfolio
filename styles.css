@@ -9,6 +9,7 @@ body{
 
 .navbar{
     position: fixed;
+    z-index: 10;
     top: 0;
     display: grid;
     width: 100%;
@@ -66,12 +67,33 @@ a:hover{
     position: relative; 
 }
 
+.fade{
+    opacity: 1;
+    /* position: absolute; */
+}
+
 .hero-image p{
     margin: 0px;
     padding: 1em;
     text-align: center;
     font-size: 20pt;
     color: lightseagreen;
+}
+
+img{
+    margin: auto;
+    display: block;
+    padding: 1em;
+    width: 40%;
+    height: 40%;
+}
+
+.About{
+    opacity: 0;
+    padding: none;
+    margin: none;
+    /* position: absolute; */
+    z-index: 9;
 }
 
 .fadeButton{
@@ -130,18 +152,6 @@ h3{
     /* display: inline-flex;  */
     /* position: absolute; */
 }
-
-.About{
-    opacity: 0;
-    padding: none;
-    margin: none;
-    position: absolute;
-}
-
-.fade{
-    opacity: 1;
-}
-
 
 .contact-section p{
     font-size: 20pt;
