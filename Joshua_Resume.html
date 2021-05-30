@@ -10,10 +10,10 @@
 <body>
     <div class="navbar">
         <div class="logo">
-            <a  href="index.html"><span>Joshua</span> Reyes</a>
+            <a  href="index.html">Joshua Reyes</a>
         </div>
 
-        <img class="mobile-menu" src="hamburger-menu.svg" alt="Hamburger Menu" onclick="myFunction()">
+        <img class="mobile-menu" src="hamburger-menu.svg" alt="Hamburger Menu" onclick="openMenu()">
 
         <div class="primary-nav">
             <div id="menuBtn" >
@@ -29,6 +29,7 @@
         </div>
 
     </div>
+
     <h3>Resume</h3>
 
     <iframe src="Joshua_Reyes__Resume.pdf#toolbar=0&navpanes=0"></iframe>
@@ -38,7 +39,7 @@
     </button>
 
     <script>
-           function myFunction() {
+           function openMenu() {
             var x = document.getElementById("menuBtn");
             if (x.style.display === "block") {
                 x.style.display = "none";

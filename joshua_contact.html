@@ -10,10 +10,10 @@
 <body>
     <div class="navbar">
         <div class="logo">
-            <a  href="index.html"><span>Joshua</span> Reyes</a>
+            <a  href="index.html">Joshua Reyes</a>
         </div>
 
-        <img class="mobile-menu" src="hamburger-menu.svg" alt="Hamburger Menu" onclick="myFunction()">
+        <img class="mobile-menu" src="hamburger-menu.svg" alt="Hamburger Menu" onclick="openMenu()">
 
         <div class="primary-nav">
             <div id="menuBtn" >
@@ -51,7 +51,7 @@
     </section>
 
     <script>
-           function myFunction() {
+           function openMenu() {
             var x = document.getElementById("menuBtn");
             if (x.style.display === "block") {
                 x.style.display = "none";

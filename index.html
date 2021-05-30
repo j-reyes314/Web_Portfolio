@@ -11,11 +11,10 @@
 
     <div class="navbar">
         <div class="logo">
-            <a  href="index.html"><span>Joshua</span> Reyes</a>
+            <a  href="index.html">Joshua Reyes</a>
         </div>
 
-        <img class="mobile-menu" src="hamburger-menu.svg" alt="Hamburger Menu" onclick="myFunction()">
-
+        <img class="mobile-menu" src="hamburger-menu.svg" alt="Hamburger Menu" onclick="openMenu()">
 
         <div class="primary-nav">
             <div id="menuBtn" >
@@ -64,13 +63,8 @@
             div1.classList.add("elementToFadeOut");
             div2.classList.add("elementToFadeIn");
         });
-        var btn2 = document.querySelector(".fadeBtn");
-        btn2.addEventListener("click", function(){
-            div2.classList.add("elementToFadeOut");
-            div1.classList.add("elementToFadeIn");
-        });
 
-        function myFunction() {
+        function openMenu() {
             var x = document.getElementById("menuBtn");
             if (x.style.display === "block") {
                 x.style.display = "none";
