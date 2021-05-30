@@ -10,16 +10,21 @@
 <body>
     <div class="navbar">
         <div class="logo">
-            <a href="index.html"><span>Joshua</span> Reyes</a>
+            <a  href="index.html">Joshua Reyes</a>
         </div>
 
+        <img class="mobile-menu" src="hamburger-menu.svg" alt="Hamburger Menu" onclick="openMenu()">
+
         <div class="primary-nav">
-            <nav>
-                <ul class="primary-nav">
-                    <li><a href="Joshua_Resume.html">Resume</a></li>
-                    <li><a href="joshua_contact.html">Contact Me</a></li>
-                </ul>
-            <nav>
+            <div id="menuBtn" >
+                <nav>
+                    <ul class="primary-nav">
+                        <li><a href="Joshua_Resume.html">Resume</a></li>
+                    
+                        <li><a href="joshua_contact.html">Contact Me</a></li>
+                    </ul>
+                <nav>
+            </div>
 
         </div>
 
@@ -44,6 +49,18 @@
             <input type="submit" value="Send">
         </form>
     </section>
+
+    <script>
+           function openMenu() {
+            var x = document.getElementById("menuBtn");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+
+    </script>
 
 </body>
 </html>

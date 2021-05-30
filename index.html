@@ -11,18 +11,21 @@
 
     <div class="navbar">
         <div class="logo">
-            <a  href="index.html"><span>Joshua</span> Reyes</a>
+            <a  href="index.html">Joshua Reyes</a>
         </div>
 
+        <img class="mobile-menu" src="hamburger-menu.svg" alt="Hamburger Menu" onclick="openMenu()">
 
         <div class="primary-nav">
-            <nav>
-                <ul class="primary-nav">
-                    <li><a href="Joshua_Resume.html">Resume</a></li>
-                    <li> - </li>
-                    <li><a href="joshua_contact.html">Contact Me</a></li>
-                </ul>
-            <nav>
+            <div id="menuBtn" >
+                <nav>
+                    <ul class="primary-nav">
+                        <li><a href="Joshua_Resume.html">Resume</a></li>
+                    
+                        <li><a href="joshua_contact.html">Contact Me</a></li>
+                    </ul>
+                <nav>
+            </div>
 
         </div>
 
@@ -60,11 +63,15 @@
             div1.classList.add("elementToFadeOut");
             div2.classList.add("elementToFadeIn");
         });
-        var btn2 = document.querySelector(".fadeBtn");
-        btn2.addEventListener("click", function(){
-            div2.classList.add("elementToFadeOut");
-            div1.classList.add("elementToFadeIn");
-        });
+
+        function openMenu() {
+            var x = document.getElementById("menuBtn");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
 
     </script>
 </body>
