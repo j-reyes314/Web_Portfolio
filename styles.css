@@ -35,7 +35,6 @@ body{
     position: absolute;
     right: 0;
     max-height: 50px;
-    /* background-color: rgb(39, 54, 53); */
     z-index: 999;
 }
 
@@ -59,7 +58,6 @@ li{
     font-size: 2em;
     list-style-type: none;
 }
-
 
 a{
     text-decoration: none;

@@ -8,28 +8,29 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <section class="navigation">
+        <div class="navbar">
+            <div class="logo">
+                <a  href="index.html">Joshua Reyes</a>
+            </div>
 
-    <div class="navbar">
-        <div class="logo">
-            <a  href="index.html">Joshua Reyes</a>
-        </div>
+            <img class="mobile-menu" src="hamburger-menu.svg" alt="Hamburger Menu" onclick="openMenu()">
 
-        <img class="mobile-menu" src="hamburger-menu.svg" alt="Hamburger Menu" onclick="openMenu()">
+            <div class="primary-nav">
+                <div id="menuBtn" >
+                    <nav>
+                        <ul class="primary-nav">
+                            <li><a href="Joshua_Resume.html">Resume</a></li>
+                        
+                            <li><a href="joshua_contact.html">Contact Me</a></li>
+                        </ul>
+                    <nav>
+                </div>
 
-        <div class="primary-nav">
-            <div id="menuBtn" >
-                <nav>
-                    <ul class="primary-nav">
-                        <li><a href="Joshua_Resume.html">Resume</a></li>
-                    
-                        <li><a href="joshua_contact.html">Contact Me</a></li>
-                    </ul>
-                <nav>
             </div>
 
         </div>
-
-    </div>
+    </section>
 
     <div class="hero-image">
       
@@ -65,11 +66,11 @@
         });
 
         function openMenu() {
-            var x = document.getElementById("menuBtn");
-            if (x.style.display === "block") {
-                x.style.display = "none";
+            var menu = document.getElementById("menuBtn");
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
             } else {
-                x.style.display = "block";
+                menu.style.display = "block";
             }
         }
 
