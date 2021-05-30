@@ -14,11 +14,11 @@ body{
     display: grid;
     width: 100%;
     grid-template-columns: auto auto auto;
-    background-color: rgb(5, 3, 3);
+    background-color: rgb(37, 28, 28);
     opacity: 0.6;
     height: 50px;
     grid-template-areas: 
-    "logo . primary-nav";
+    "logo . mobile-menu";
 }
 
 .logo{
@@ -30,19 +30,36 @@ body{
     font-size: 20pt;
 }
 
-.primary-nav{
-    grid-area: primary-nav;
-    display: inline;
-    margin:  .25em .25em;
-    list-style-type: none;
-    font-size: 20pt;
-    font-family: fantasy;
+.mobile-menu{
+    grid-area: mobile-menu;
+    position: absolute;
+    right: 0;
+    max-height: 50px;
+    /* background-color: rgb(39, 54, 53); */
+    z-index: 999;
+}
+
+.mobile-menu:hover{
+    background-color: white
+}
+
+#menuBtn{
+    display: none;
+    position: fixed;
+    z-index: 900;
+    width: 66%;
+    right: 0;
+    top: 0;
+    background: rgb(41, 49, 49);
+    height: 100vh;
+    padding: 1em;
 }
 
 li{
-    float: right;
-    padding-left: .25em;
-} 
+    font-size: 2em;
+    list-style-type: none;
+}
+
 
 a{
     text-decoration: none;
@@ -178,7 +195,7 @@ iframe{
     text-align: center;
     display: block;
     width: 80%;
-    height: 67em;
+    height: 32em;
     border: none;
     margin: auto;
     margin-bottom: 1em;
@@ -193,5 +210,57 @@ iframe{
 
     .mobile-exit,.mobile-menu{
         display: none;
+    }
+
+    .navbar{
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        display: grid;
+        width: 100%;
+        grid-template-columns: auto auto auto;
+        background-color: rgb(5, 3, 3);
+        opacity: 0.6;
+        height: 50px;
+        grid-template-areas: 
+        "logo . primary-nav";
+    }
+
+    
+    .primary-nav{
+        grid-area: primary-nav;
+        display: inline;
+        margin:  .25em .25em;
+        list-style-type: none;
+        font-size: 20pt;
+        font-family: fantasy;
+    }
+
+    #menuBtn{
+        padding-top: none;
+        margin-top: -.75em;
+        display: inline;
+        background: none;
+        z-index: none;
+        width: auto;
+        height: auto;
+    }
+
+    li{
+        font-size: 20pt;
+        float: right;
+        padding-left: .25em;
+    } 
+
+    iframe{
+        margin: 0em;
+        padding-top: 1em;
+        text-align: center;
+        display: block;
+        width: 80%;
+        height: 67em;
+        border: none;
+        margin: auto;
+        margin-bottom: 1em;
     }
 }
